@@ -34,8 +34,6 @@ class Auth with ChangeNotifier {
     return _userId;
   }
 
-  // AIzaSyCDZP_OIxB3SvggP5cwydSozLLHTJnZPUk
-
   Future<void> _authenticate(
       String email, String password, String value, {String fullName = "", String dob = "", String rollNumber = ""}) async {
     var url = Uri.parse(
